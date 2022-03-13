@@ -170,7 +170,7 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 /* Главный блок */
-.section.hero {
+.section-hero {
   background-color: var(--secondary-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -185,7 +185,7 @@ address {
   ),
   url("../image/backgrounds/optimiz/bghero.jpg");
   }
-.hero-title {
+.section-hero__title {
   color: var(--white);
   margin: auto;
   font-weight: 900;
@@ -211,7 +211,7 @@ background-color: var(--accent-color);
 border: none;
 border-radius: 4px;
 }
-.hero-button {
+.section-hero__button {
   display: block;
   margin-top: 30px;
   margin-right: auto;
@@ -232,8 +232,10 @@ border-radius: 4px;
   cursor: pointer;
   border: transparent;
 }
+
+
 /* Особенности */
-.section {
+.section-features {
   color: var(--main-text-color);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -250,19 +252,16 @@ border-radius: 4px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.peculiarities-list {
+.section-features__list {
   display: flex;
 }
-.peculiarities-list .item {
+.section-features__item {
   width: 270px;
 }
-.section .item:not(:last-child) {
+.section-features__item:not(:last-child) {
   margin-right: 30px;
 }
-.section .item {
-position: relative;
-}
-.icon-wrap {
+.section-features__icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,6 +271,32 @@ position: relative;
   background-color: var(--btn-bg-color);
   border-radius: 4px;
 }
+.section-features__title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-features__paragraphly {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.section .item {
+position: relative;
+display: flex;
+}
+
+
+
+
+
+
+
 .section-team .item {
   display: flex;
   flex-direction: column;
@@ -284,9 +309,9 @@ position: relative;
   
 }
 
-.section .title {
+/* .section .title {
   margin-bottom: 10px;
-}
+} */
 .section.todo {
   padding-top: 0;
 }
@@ -312,19 +337,7 @@ position: absolute;
   display: flex;
 }
 
-.peculiarities-list .title {
-  color: var(--main-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.peculiarities-list .paragraphly {
-  color: var(--secondary-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
+
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;

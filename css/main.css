@@ -1,3 +1,19 @@
+.button {
+  min-width: 200px;
+  max-width: 350px;
+  padding: 10px 32px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: var(--font-size-medium);
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -108,5 +124,108 @@
 .header-contacts__icon {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  min-height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/backgrounds/optimiz/bghero.jpg");
+}
+
+.section-hero__title {
+  color: #ffffff;
+  margin: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  max-width: 696px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-hero__button {
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: transparent;
+}
+
+.section-features {
+  color: #212121;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-features__list {
+  display: flex;
+}
+
+.section-features__item {
+  width: 270px;
+}
+
+.section-features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-features__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.section-features__title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-features__paragraphly {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
