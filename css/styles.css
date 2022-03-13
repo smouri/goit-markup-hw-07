@@ -286,10 +286,12 @@ border-radius: 4px;
   letter-spacing: 0.03em;
 }
 
-.section .item {
-position: relative;
-display: flex;
-}
+
+
+
+
+
+
 
 
 
@@ -312,10 +314,29 @@ display: flex;
 /* .section .title {
   margin-bottom: 10px;
 } */
-.section.todo {
+.section-performance {
   padding-top: 0;
+  padding-bottom: 94px;
 }
-.worklist {
+.section-performance__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section-performance__list {
+  display: flex;
+}
+.section-performance__item {
+position: relative;
+display: flex;
+}
+.section-performance__item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-performance__worklist {
 position: absolute;
     bottom: 0;
     display: flex;
@@ -325,7 +346,7 @@ position: absolute;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
 }
-.worklist-project {
+.section-performance__project {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -333,19 +354,13 @@ position: absolute;
   text-transform: uppercase;
   color: var(--white);
 }
-.list {
-  display: flex;
+
+.section .item {
+position: relative;
+display: flex;
 }
 
 
-.section-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 .section.team {
   background-color: var(--btn-bg-color);
 }
