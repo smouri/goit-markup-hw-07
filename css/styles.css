@@ -59,7 +59,7 @@ address {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header > .container {
+.header .container {
   display: flex;
   justify-content: center;
 }
